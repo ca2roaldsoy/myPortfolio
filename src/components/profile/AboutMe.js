@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <section className="sub_heading">
+    <section className="sub_heading about">
       <h3>About Me</h3>
       <p>I am a front end developer.</p>
       <p>
