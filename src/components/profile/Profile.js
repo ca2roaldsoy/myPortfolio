@@ -4,13 +4,11 @@ import AboutMe from "./AboutMe";
 
 function Profile() {
   return (
-    <div className="container">
-      <main role="main" className="heading_container">
-        <h2>PROFILE</h2>
-        <MyInfo />
-        <AboutMe />
-      </main>
-    </div>
+    <main role="main" className="heading_container container">
+      <h2>PROFILE</h2>
+      <MyInfo />
+      <AboutMe />
+    </main>
   );
 }
 
