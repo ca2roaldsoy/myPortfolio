@@ -4,7 +4,7 @@ import AboutMe from "./AboutMe";
 
 function Profile() {
   return (
-    <main role="main" className="heading_container container">
+    <main role="main">
       <h2>PROFILE</h2>
       <MyInfo />
       <AboutMe />

@@ -4,7 +4,7 @@ import { CardText } from "react-bootstrap/Card";
 
 function Education() {
   return (
-    <section className="sub_heading">
+    <section>
       <h3>Education</h3>
       <h4>
         <b>Noroff</b>
