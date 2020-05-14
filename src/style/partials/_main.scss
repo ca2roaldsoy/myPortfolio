@@ -162,3 +162,8 @@ li {
 .back {
   transform: rotateY(180deg);
 }
+
+.links {
+  display: flex;
+  justify-content: center;
+}

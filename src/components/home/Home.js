@@ -1,5 +1,6 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
+import { bounceInDown, fadeIn } from "react-animations";
+import styled, { keyframes } from "styled-components";
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,42 +11,48 @@ import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
 import Profile from "../profile/Profile";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 function Home() {
-  const props = useSpring({
-    color: "blue",
-    from: { color: "red" },
-    config: { duration: 3000 },
-  });
-
   return (
     <>
-      <animated.h1 style={props}> Cato Roaldsøy</animated.h1>
+      <h1 className="animate__animated animate__fadeIn">Cato Roaldsøy</h1>
 
       <Router>
         <Row>
-          <Col lg={3}>
-            <NavLink to="/profile" className="nav-link" role="link">
+          <Col
+            lg={3}
+            className="animate__animated animate__bounceInDown animate__slow"
+          >
+            <NavLink to="/profile" role="link">
               Profile
             </NavLink>
           </Col>
 
-          <Col lg={3}>
-            <NavLink to="/experience" className="nav-link" role="link">
+          <Col
+            lg={3}
+            className="animate__animated animate__bounceInDown animate__slower"
+          >
+            <NavLink to="/experience" role="link">
               Experience
             </NavLink>
           </Col>
 
-          <Col lg={3}>
-            <NavLink to="/projects" className="nav-link" role="link">
+          <Col
+            lg={3}
+            className="animate__animated animate__bounceInDown animate__slow animate__delay-1s"
+          >
+            <NavLink to="/projects" role="link">
               Projects
             </NavLink>
           </Col>
 
-          <Col lg={3}>
-            <NavLink to="/contact" className="nav-link" role="link">
+          <Col
+            lg={3}
+            className="animate__animated animate__bounceInDown animate__slower animate__delay-1s"
+          >
+            <NavLink to="/contact" role="link">
               Contact
             </NavLink>
           </Col>
