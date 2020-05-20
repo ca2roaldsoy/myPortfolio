@@ -2,7 +2,7 @@ import React from "react";
 
 function Work() {
   return (
-    <section className="sub_heading">
+    <section>
       <h3>Work</h3>
       <h4>Madla Military Camp</h4>
       <h5>Assistent Chef</h5>
